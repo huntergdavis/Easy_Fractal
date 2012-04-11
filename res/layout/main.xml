@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+		<com.google.ads.AdView android:id="@+id/adView"
+		android:layout_alignParentBottom="true" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" ads:adUnitId="a14e00c911455ec"
+		ads:adSize="BANNER" ads:loadAdOnCreate="true" />
+	<TableRow android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:id="@+id/filerow">
+	<Button android:id="@+id/newbutton" android:layout_height="wrap_content"
+		android:layout_width="wrap_content" android:text="Regen"
+		 />	
+		<Button android:id="@+id/colorsbutton" android:layout_height="wrap_content"
+		android:layout_width="wrap_content" android:text="New Colors"
+		 />	
+		
+	<Button android:id="@+id/savebutton" android:layout_height="wrap_content"
+		android:layout_width="wrap_content" android:text="Save Fractal Image"
+		 />			 
+
+		 </TableRow>
+		 	<TextView android:id="@+id/instructionsText"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:text="Click Fractal To Zoom In" android:layout_below="@+id/loadButton" />
+		 
+	<ImageView android:id="@+id/ImageView01" android:scaleType="fitStart"
+		android:layout_width="fill_parent" android:layout_height="fill_parent" />
+
+</LinearLayout>
